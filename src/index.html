@@ -50,13 +50,19 @@
     <header>
 
         <!-- navbar section -->
-        <nav class="py-[1.8rem]">
+        <nav class="py-[1.8rem] border-b-2 border-b-black-300 md:border-none">
             <div class="flex justify-around items-center gap-4">
                 <div>
                     <img src="../assets/logo-header.png" alt="">
                 </div>
-                <div class="flex gap-[2rem]">
-                    <div class="flex space-x-28 ">
+
+                <div class="navIcn block md:hidden">
+                    <img src="../assets/bars-3.svg" alt="">
+                </div>
+
+                <div class="hidden md:flex gap-[2rem] navmenu">
+
+                    <div class="flex space-x-28">
                         <div>
                             <ul class="flex gap-8">
                                 <li><a href="">Product</a></li>
@@ -149,12 +155,12 @@
         </section>
 
         <!-- popular product section -->
-        <section class="bg-card-primary pb-36 ">
-            <h3 class="text-grocery-primary font-semibold text-3xl  pt-16 mb-12 max-w-[1300px] mx-auto ">Popular
+        <section class="bg-card-primary p-4 pb-36 ">
+            <h3 class="container max-w-[1300px] mx-auto text-grocery-primary font-semibold text-3xl pt-16 mb-12">Popular
                 Products</h3>
-            <div class="md:flex gap-[2rem] container max-w-[1300px] mx-auto">
+            <div class="flex flex-wrap gap-[2rem] container max-w-[1300px] mx-auto">
                 <!-- 30% Off -->
-                <div class=" w-[27rem] h-[26rem] pl-8 pt-14 space-y-4 rounded-lg bg-gradient-to-r from-green-400 to-green-300 relative"">
+                <div class=" max-w-[27rem] h-[26rem] pl-8 pt-14 space-y-4 rounded-lg bg-gradient-to-r from-green-400 to-green-300 relative"">
                     <h3 class=" text-4xl font-bold text-white">30% off</h3>
                     <p class="text-xl">Discover a world of treats, toys, and <br>
                         essentials handpicked for</p>
@@ -163,11 +169,11 @@
                 </div>
 
                 <!-- grocery grid elements -->
-                <div class="grid gap-4 grid-cols-2 md:grid-cols-3 flex-1">
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                <div class="grid gap-4 grid-cols-2 md:grid-cols-3 flex-1 text-[12px]">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/onion.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -175,10 +181,10 @@
                             <p class="font-medium">$39.99</p>
                         </div>
                     </div>
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/tomato.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -186,10 +192,10 @@
                             <p class="font-medium">$39.99</p>
                         </div>
                     </div>
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/potato.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -197,10 +203,10 @@
                             <p class="font-medium">$39.99</p>
                         </div>
                     </div>
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/onion.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -208,10 +214,10 @@
                             <p class="font-medium">$39.99</p>
                         </div>
                     </div>
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/tomato.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -219,10 +225,10 @@
                             <p class="font-medium">$39.99</p>
                         </div>
                     </div>
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/potato.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -230,10 +236,10 @@
                             <p class="font-medium">$39.99</p>
                         </div>
                     </div>
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/onion.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -241,10 +247,10 @@
                             <p class="font-medium">$39.99</p>
                         </div>
                     </div>
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/tomato.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -252,10 +258,10 @@
                             <p class="font-medium">$39.99</p>
                         </div>
                     </div>
-                    <div class="hero-content flex-col lg:flex-row bg-white rounded-lg">
+                    <div class="hero-content flex flex-row bg-white rounded-lg">
                         <img src="../assets/potato.png" class=" rounded-lg bg-card-primary" />
                         <div>
-                            <div class="flex">
+                            <div class="flex gap-2">
                                 <img src="../assets/star.png" alt="">
                                 <p>4.5</p>
                             </div>
@@ -268,35 +274,39 @@
         </section>
 
         <!-- Arrival & Offers section -->
-        <section class="container max-w-[1300px] mx-auto">
+        <section class="container max-w-[1300px] mx-auto p-4">
             <h3 class="text-grocery-primary font-semibold text-3xl  pt-16 mb-12 max-w-[1300px] mx-auto ">
                 Arrival & Offers</h3>
 
-            <div class=" lg:flex lg:space-x-5 pb-96">
+            <div class="flex flex-wrap md:flex-nowrap gap-4 lg:space-x-5 pb-96">
 
                 <!-- Daawat section -->
-                <div class="lg:w-3/5 flex bg-[#115414] rounded-3xl pl-10 pt-8">
-                    <div>
-                        <img src="../assets/dawat-logo.png" alt="">
-                        <button class="bg-[#63B76D] text-white w-[21rem] h-[4rem] my-7 rounded-xl">Cook Exotic
+                <div class="w-[100%] lg:w-3/5 flex bg-[#115414] rounded-3xl p-[1rem] items-center justify-center">
+                    <div class="w-[60%]">
+                        <img class="w-auto max-h-[42px]" src="../assets/dawat-logo.png" alt="">
+                        <button
+                            class="bg-[#63B76D] text-[12.5px] md:text-[20px] text-white w-[177px] h-[35px] md:w-[21rem] md:h-[4rem] my-7 rounded-xl">Cook
+                            Exotic
                             Dishes</button>
-                        <h2 class="text-white text-4xl">UP to <span class="font-bold">20% OFF</span></h2>
+                        <h2 class="text-white text-xl md:text-4xl">UP to <span class="font-bold">20% OFF</span></h2>
                     </div>
-                    <div>
-                        <img src="../assets/dawat-mock-up.png" alt="">
+                    <div class="w-[40%]">
+                        <img class="w-[100%] h-auto" src="../assets/dawat-mock-up.png" alt="">
                     </div>
                 </div>
 
                 <!-- India-gate section -->
-                <div class="lg:flex-1 flex bg-[#102861] rounded-3xl pl-6">
-                    <div class="pt-5">
-                        <img src="../assets/india-gate-logo.png" alt="">
-                        <button class="bg-[#2A4D97] text-white w-[17rem] h-[4rem] my-7 rounded-xl">World’s No.1
+                <div class="w-[100%] lg:w-[40%] flex bg-[#102861] rounded-3xl p-[1rem]">
+                    <div class="w-[60%]">
+                        <img class="w-auto max-h-[70px]" src="../assets/india-gate-logo.png" alt="">
+                        <button
+                            class="bg-[#63B76D] text-[12.5px] md:text-[18px] text-white w-[177px] h-[35px] md:w-[15rem] md:h-[4rem] my-7 rounded-xl">World’s
+                            No.1
                             Rice</button>
-                        <h2 class="text-white text-4xl">UP to <span class="font-bold">40% OFF</span></h2>
+                        <h2 class="text-white text-xl md:text-4xl">UP to <span class="font-bold">40% OFF</span></h2>
                     </div>
-                    <div class="pt-10 pr-3">
-                        <img src="../assets/india-gate-mock-up.png" alt="">
+                    <div class="w-[40%]">
+                        <img class="w-[100%] h-auto" src="../assets/india-gate-mock-up.png" alt="">
                     </div>
                 </div>
             </div>
@@ -308,17 +318,17 @@
     <footer>
 
         <!-- news latter section -->
-        <div class="relative">
+        <!-- <div class="relative">
             <section
-                class=" absolute -top-[14rem] left-[19rem] bg-[#EFEBE3] container h-[29rem] max-w-[1300px] mx-auto rounded-3xl">
-                <div class=" flex space-x-32 items-center justify-center">
+                class=" absolute -top-[14rem] md:left-[19rem] bg-[#EFEBE3] container max-w-[1300px] rounded-3xl p[2rem]">
+                <div class=" flex flex-wrap space-x-32 items-center justify-center">
                     <div class="pt-14">
                         <img src="../assets/vegetable-busket.png" alt="">
                     </div>
                     <div class="space-y-9">
                         <h2 class="font-semibold text-4xl">Get Grocery News!</h2>
                         <p>Exclusive training tips, ticks, product deals and more.</p>
-                        <input class="bg-white w-[29.5rem] h-[4rem] rounded-lg py-[1rem] pl-[1rem]" type="email"
+                        <input class="bg-white max-w-[29.5rem] h-[4rem] rounded-lg py-[1rem] pl-[1rem]" type="email"
                             placeholder="Enter email....">
                         <button
                             class="block py-2 rounded-lg w-[10rem] bg-grocery-primary text-white text-lg font-normal"><a
@@ -326,12 +336,29 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div> -->
 
         <!-- main footer section -->
         <section>
-            <div class="footer bg-[#179800] text-[#EFEBE3] text-[1.25rem] pb-36 pt-96 border border-black">
-                <aside class="pl-36">
+            <div class="footer p-[2rem] relative bg-[#179800] text-[#EFEBE3] text-[1.25rem] pb-36 pt-96 border border-black">
+                <section
+                    class=" absolute -top-[17rem] md:-top-[10rem] left-[1.5rem] md:left-[19rem] bg-[#EFEBE3] container max-w-[360px] md:max-w-[1300px] rounded-3xl p-[2rem] mx-4">
+                    <div class=" flex flex-wrap items-center justify-center">
+                        <div class="pt-14 min-w-[80px]">
+                            <img class="w-[100%]" src="../assets/vegetable-busket.png" alt="">
+                        </div>
+                        <div class="flex items-center flex-col gap-4 md:flex-start text-black">
+                            <h2 class="font-semibold text-2xl md:text-4xl">Get Grocery News!</h2>
+                            <p class="text-center">Exclusive training tips, ticks, product deals and more.</p>
+                            <input class="bg-white w-[100%] md:w-[29.5rem] h-[4rem] rounded-lg py-[1rem] pl-[1rem]" type="email"
+                                placeholder="Enter email....">
+                            <button
+                                class="block py-2 rounded-lg w-[10rem] bg-grocery-primary text-white text-lg font-normal"><a
+                                    href="">Subscribe</a></button>
+                        </div>
+                    </div>
+                </section>
+                <aside class="md:pl-36">
                     <img class="w-40" src="../assets/logo-white.png" alt="">
                     <p>
                         Discover a world of treats, toys, and <br>
